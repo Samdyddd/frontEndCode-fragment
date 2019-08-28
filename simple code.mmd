@@ -1,0 +1,12 @@
+* 1.获取url查询参数并转化为对象
+
+var http = location.search;
+
+var q = {};
+http.replace(/([^?&=]+)=([^&]+)/g, (_,k,v)=> q[k] = v);
+q;
+
+
+
+
+
